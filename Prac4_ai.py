@@ -48,3 +48,9 @@ def bfs(start, goal):
         for nb, w in g[node]:
             q.append((nb, path + [nb]))
 
+# Run algorithms
+p1, c = astar('A', 'G')
+p2 = bfs('A', 'G')
+
+print("A*:", *p1, "Cost:", c)
+print("BFS:", *p2)
